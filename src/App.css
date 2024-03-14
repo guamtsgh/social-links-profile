@@ -1,42 +1,100 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+  /* Primary */
+  --green: hsl(75, 94%, 57%);
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --gray: hsl(0, 0%, 20%);
+  --dark-grey: hsl(0, 0%, 12%);
+  --off-black: hsl(0, 0%, 8%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  background-color: var(--off-black);
+  color: var(--white);
+
+  display: flex;
+  justify-content: center;
+  padding: 10rem 0;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+#container {
+  background-color: var(--dark-grey);
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   padding: 2rem;
-  text-align: center;
+  border-radius: 0.5rem;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+img {
+  border-radius: 50%;
+  width: 30%;
+  margin-bottom: 1rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#details {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+#details h1 {
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
-.card {
-  padding: 2em;
+#details p {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--green);
 }
 
-.read-the-docs {
-  color: #888;
+#career {
+  margin-bottom: 1rem;
+
+  font-size: 0.7rem;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+button {
+  background-color: var(--gray);
+  color: var(--white);
+  
+  width: 15rem;
+  height: 2rem;
+
+  border-radius: 0.4rem;
+  border: none;
+
+  font-size: 0.7rem;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+button:active {
+  background-color: var(--green);
+  color: var(--off-black);
 }
