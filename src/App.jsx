@@ -15,11 +15,21 @@ function App() {
       <p id='career'>"Front-end developer and avid teacher."</p>
 
       <div id='buttons'>
-        <button>Github</button>
-        <button>Frontend Mentor</button>
-        <button>Linkedin</button>
-        <button>Twitter</button>
-        <button>Instagram</button>
+        <a href='https://www.github.com'>
+          <button>Github</button>
+        </a>
+        <a href='https://www.frontendmentor.io'>
+          <button>Frontend Mentor</button>
+        </a>
+        <a href='http://www.linkedin.com'>
+          <button>Linkedin</button>
+        </a>
+        <a href='http://www.twitter.com'>
+          <button>Twitter</button>
+        </a>
+        <a href='https://www.instagram.com'>
+          <button>Instagram</button>
+        </a>
       </div>
     </section>
   ) 
